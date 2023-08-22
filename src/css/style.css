@@ -167,4 +167,25 @@ ul.navbar-nav{
     color:#868688;
 }
 /* End Carousel */
+/* Start Feaures-product */
+#store-features{
+    box-shadow: 0 0 15px #EEF0EA;
+    background-image: url('../images/bg_features.png');
+    background-repeat: no-repeat;
+    background-size: auto 60%;
+    position: relative;
+    top:-15px;
+    background-color: #fff;
+    padding-bottom: 35px;
+    padding-top:25px;
+    background-position: -10px -20px;
+}
+#store-features .feature  img{
+    height:40px;
+    margin-bottom: 10px;
+}
+#store-features .feature+.feature{
+    border-right: 2px solid #EEF0EA;
+}
+/* End Feaures-product */
 /*  End Header */
