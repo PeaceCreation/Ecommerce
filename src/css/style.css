@@ -81,4 +81,90 @@
 ul.navbar-nav{
     margin-left: auto;
 }
+
+/* Start Carousel */
+#carousel-features{
+    height:400px;
+    background-color: #F7f8f3;
+    padding-top:25px;
+}
+#carousel-features .carousel-item img{
+    height: 375px;
+}
+#carousel-features .product-details{
+    border:1px solid #DDDDDB;
+    padding:20px;
+    position: relative;
+    top:50px;
+    height:200px;
+    background-color: #F7f8f3;
+}
+#carousel-features .product-details h1{
+    font-weight: 700;
+    font-size: 175%;
+    margin-top: 20px;
+}
+#carousel-features .product-details .product-category{
+    border:1px solid #DDDDDB;
+    padding:10px;
+    position:absolute;
+    top:-10px;
+    right:-10px;
+    background-color: #F7f8f3;
+}
+.custom-outline-warning{
+    background-color: transparent;
+    border-color: #f8ad47;
+    color: #f8ad47;
+}
+.search-.custom-outline-warning:hover,
+.search-.custom-outline-warning:active,
+.search-.custom-outline-warning:focus,
+.search-.custom-outline-warning:active:focus,
+.search-.custom-outline-warning:active:hover{
+    border-color: #b86d07;
+    color: #b86d07;
+}
+.sale{
+    background-color: #53CCD7;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+}
+.sale.large{
+    height: 60px;
+    width:60px;
+    border-radius: 50%;
+    left: -15px;
+    top:-15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 90%;
+    transform: rotate(-25deg);
+}
+.sale.large span{
+    font-size: 10px;
+}
+.custom-carousel-indicators{
+    top:290px;
+    left:55%;
+}
+.custom-carousel-primary{
+    width:80px !important;
+    height: 80px !important;
+    opacity: 1 !important;
+    border:1px solid #DDDDDB !important;
+    margin: 0  5px !important;
+}
+.custom-carousel-primary.active{
+    border-color: #f8ad47 !important;
+}
+#carousel-features .carousel-control-prev .fa-chevron-left,
+#carousel-features .carousel-control-next .fa-chevron-right{
+    font-size: 40px;
+    color:#868688;
+}
+/* End Carousel */
 /*  End Header */
