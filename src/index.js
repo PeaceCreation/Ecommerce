@@ -13,3 +13,11 @@ import '@fortawesome/fontawesome-free/js/all.min.js'
 document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(item => {
     new bootstrap.Tooltip(item)
 });
+
+// Add To Cart 
+
+document.querySelectorAll(".add-to-cart-btn").forEach(item =>{
+    item.addEventListener("click", () =>{
+        alert("Your Product is added");
+    })
+})
