@@ -21,3 +21,7 @@ document.querySelectorAll(".add-to-cart-btn").forEach(item =>{
         alert("Your Product is added");
     })
 })
+
+// get Year
+
+document.getElementById("fullYear").innerHTML = new Date ().getFullYear();
