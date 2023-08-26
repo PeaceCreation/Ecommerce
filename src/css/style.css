@@ -359,6 +359,102 @@ ul.navbar-nav{
 /* End Footer */
 /* End Product */
 
+
+/* Start Product page */
+.custom-breadcrumb{
+    padding:25px 0;
+}
+.custom-breadcrumb a{
+    color:#555;
+    text-decoration: none;
+}
+.custom-breadcrumb a:hover{
+    color:#f8ad47;
+}
+.custom-breadcrumb>li::before{
+    color:#f8ad47 !important
+}
+.custom-breadcrumb  .active{
+    color:#bfbfbf !important;
+}
+
+#carousel-product-images .carousel-indicators{
+    position:absolute;
+    top: 92%;
+    right: 0;
+}
+#carousel-product-images  .carousel-item img{
+    width: 100%;
+    height: auto;
+    border:1px solid #EBEBEB
+}
+.product-category{
+    color:#A9A9A9
+}
+#form-product-section h2{
+    font-weight:700;
+    margin:18px 0;
+}
+.price.large{
+    margin-top:20px;
+    font-size: 30px;
+}
+.border-between>div+div{
+    border-top:1px solid #EBEBEB;
+    padding:15px 0;
+}
+.product-option{
+    display: inline-block;
+    height:18px;
+    width:18px;
+    border:1px solid #EBEBEB;
+    justify-content: center;
+    margin:2px;
+    font-weight: 700;
+}
+.color-option .active{
+    border-color: #fff;
+    outline: #000 solid 1px;
+}
+.product-option input{
+    display: none;
+}
+.product-option  .active{
+    color: #f8ad47;
+    border-color: #f8ad47;
+}
+.product-quantity select{
+    height: 34px !important;
+    padding:6px 12px;
+}
+.custom-btn-with-icon{
+    margin:15px 0;
+    font-size: 20px;
+    padding:5px 10px;
+}
+/*  Start Description */
+.headind-witdh-border-bottom{
+    border-bottom:1px solid #EBEBEB;
+    padding-bottom:15px;
+    display: inline-block;
+    min-width:250px;
+}
+.more-description p,
+.more-description ul{
+    margin-bottom:10px;
+}
+/*  Start Description */
+.comments .comment img{
+    width:80px;
+    height:80px;
+    margin-left:10px;
+    border:1px solid #dfdfdf;
+}
+.comments .comment h4{
+    font-size: 15px;
+    margin-bottom:5px;
+}
+/* Start Product page */
 /* Start Media Queries */
 
 @media (max-width: 575.98px) { 
@@ -370,6 +466,10 @@ ul.navbar-nav{
     }
     .newletter form .form-control{
         width:50% !important;
+    }
+    #form-product-section,
+    .comments{
+        padding-right:15px;
     }
  }
 
@@ -452,6 +552,10 @@ ul.navbar-nav{
     .d-flex.copy{
         display: block !important;
     }
+    .product-images{
+        margin-bottom: 70px;
+    }
+    
  }
 
 @media (max-width: 1199.98px) { 
@@ -476,6 +580,15 @@ ul.navbar-nav{
         border-color: #868686;
         margin: 15px auto ;
         font-weight: 400;
+    }
+    .product-option{
+        display: inline-block;
+        height:14px;
+        width:11px;
+        border:1px solid #EBEBEB;
+        justify-content: center;
+        margin:2px;
+        font-weight: 700;
     }
  } 
 @media (max-width: 1399.98px) { 

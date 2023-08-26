@@ -22,6 +22,17 @@ document.querySelectorAll(".add-to-cart-btn").forEach(item =>{
     })
 })
 
+// Select color 
+
+document.querySelectorAll('.size-option input[type="radio"]').forEach( item =>{
+    item.addEventListener("change", ()=>{
+        document.querySelectorAll('.size-option').forEach( elm =>{
+            elm.classList.remove("active")
+        })
+        item.parentNode.parentNode.classList.add("active")
+    })
+})
+
 // get Year
 
 document.getElementById("fullYear").innerHTML = new Date ().getFullYear();
