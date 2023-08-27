@@ -32,7 +32,35 @@ document.querySelectorAll('.size-option input[type="radio"]').forEach( item =>{
         item.parentNode.parentNode.classList.add("active")
     })
 })
+//  Select Product Price 
+document.querySelectorAll('[data-product-quantity]').forEach( item =>{
+    item.addEventListener('change', ()=>{
+        const newquantity = item.value;
+        const parent = item.closest('[data-product-info]');
+        const priceperunite = parent.getAttribute('data-product-price');
+        const total = newquantity * priceperunite;
+        parent.querySelector('.total-price-for-product').innerHTML = total + "$";
+        let totatPrice = 0;
+        document.querySelectorAll('[data-product-info]').forEach( product =>{
+            const pricePer = product.getAttribute('data-product-price')
+            const quantity = product.querySelector('[data-product-quantity]').value;
+            const totalProdu = pricePer * quantity;
+            totalProdu = totalProdu + totatPrice;
+        })
+    })
+})
+// Total Price 
 
+// Rmove cart 
+document.querySelectorAll('[data-remove-from-crad]').forEach( item=>{
+    item.addEventListener("click", (e)=>{
+        e.preventDefault()
+        item.closest('[data-product-info]').remove();
+        console.log("Product Removed")
+        // Calcule Price 
+    })
+})
+ 
 // get Year
 
 document.getElementById("fullYear").innerHTML = new Date ().getFullYear();

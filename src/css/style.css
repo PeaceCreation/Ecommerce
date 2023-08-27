@@ -455,6 +455,66 @@ ul.navbar-nav{
     margin-bottom:5px;
 }
 /* Start Product page */
+
+/*  Start Checkout */
+ .custom-media img{
+    width:80px;
+    height: 80px;
+    border:1px solid #EBEBEB;
+    margin-left: 10px;
+ }
+ .custom-table th,
+ .custom-table td
+ {
+    font-size: 12px;
+    vertical-align: middle;
+    border-top: 1px solid #000;
+    border-bottom:1px solid #EBEBEB;
+ }
+ .custom-table h4{
+    font-size:20px;
+    margin:12px 0;
+ }
+ .custom-table th{
+    color:#C2C2C2;
+    font-size: normal;
+ }
+ .custom-table th:first-child,
+ .custom-table td:first-child{
+    width:50%;
+ }
+ .custom-table th:not(:first-child),
+ .custom-table td:not(:first-child){
+    text-align: center;
+ }
+.custom-heading{
+    font-size:36px;
+    margin-bottom: 25px;
+}
+.custom-table .custom-table tfoot{
+    border-bottom: none;
+    font-size: 150%;
+}
+#total-price{
+    color:#000;
+}
+.custom-btn-outline-danger{
+    background-color:transparent;
+    border-color:#ff3956;
+    color:#ff3956;
+}
+.custom-btn-outline-danger:hover{
+    border-color:#ff3956;
+    color:#ff3956;
+}
+thead{
+    padding:14px  0 !important;
+}
+.borders-between{
+    border-top: 1px solid #ebebeb;
+    padding: 15px 0;
+}
+/*  End  Checkout */
 /* Start Media Queries */
 
 @media (max-width: 575.98px) { 
