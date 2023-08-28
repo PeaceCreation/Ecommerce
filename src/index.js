@@ -60,7 +60,57 @@ document.querySelectorAll('[data-remove-from-crad]').forEach( item=>{
         // Calcule Price 
     })
 })
- 
+ // Choose City 
+const citiesbyCountry = {
+    sa: ['Maka', 'Reyadh'],
+    mr: ['Nouakcoutt', 'Nouadhbou'],
+    al: ['Algeria', 'Adrar'],
+    pl: ['Qudse', 'Ramela']
+}
+document.querySelectorAll('select[name="country"]').forEach( item =>{
+    item.addEventListener('change', ()=>{
+        const country = item.value;
+        const cities = citiesbyCountry[country]
+        document.querySelectorAll("paymentcities option").forEach( option =>{
+            option.remove()
+        })
+        const firstOption = document.createElement("option")
+        const optionText = document.createTextNode("Choose a City")
+        firstOption.appendChild(optionText)
+        firstOption.setAttribute('value', '')
+        firstOption.setAttribute('disabled', true)
+        firstOption.setAttribute('selected', true)
+        const cityOption = document.getElementById("paymentcities")
+        cityOption.appendChild(firstOption)
+        
+        cities.forEach( city =>{
+            const newOption = document.createElement("option");
+            const optionText = document.createTextNode(city)
+            newOption.appendChild(optionText)
+            newOption.setAttribute('value', city)
+            cityOption.appendChild(newOption)
+        })
+    })
+})
+//  Card Credit 
+document.querySelectorAll("#form-checkout input[name='paymentmethod']").forEach( item=>{
+    item.addEventListener("change", ()=>{
+        const paymentMethod = item.value
+        const carditCardInput = document.querySelectorAll("#cardit_card_info input");
+        if(paymentMethod === 'delivery'){
+            carditCardInput.forEach( input =>{
+                input.style.display = 'none';
+            })
+        }else{
+            carditCardInput.forEach(input =>{
+                input.style.display = 'block';
+            })
+        }
+       
+    })
+})
+console.log()
+
 // get Year
 
 document.getElementById("fullYear").innerHTML = new Date ().getFullYear();

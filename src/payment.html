@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E =Commerce | Checkout </title>
+    <title>E-Commerce | Payement</title>
 </head>
 <body>
     <div class="container-fluid">
-    <!-- Start Navbar -->
+            <!-- Start Navbar -->
     <div class="row">
         <nav class="navbar custom-navbar navbar-expand-lg ">
             <div class="container px-0">
@@ -72,20 +72,92 @@
     </div>
     <!-- end Navbar -->
     <div class="container">
-        <div class="container">
             <div class="row" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
                 <ol class="breadcrumb custom-breadcrumb">
                     <li class="breadcrumb-item"><a href="./index.html"> Home</a></li>
-                    <li class="breadcrumb-item"><a href="#"> Men Colths</a></li>
-                    <li class="breadcrumb-item "><a href="#" class="active"> Product</a></li>
+                    <li class="breadcrumb-item"><a href="./checkout.html">Checkout </a></li>
+                    <li class="breadcrumb-item "><a href="#" class="active"> Payment</a></li>
                 </ol>
             </div>
-        </div>
     </div>
+    <!--  Start Payment -->
     <div class="container">
-        <div class="row">
-            <h1 class="heading custom-heading"> Shopping cart </h1>
-            <form action="./payment.html" id="form-checkout">
+        <form action="" id="form-checkout">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="heading"> Personal information</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" name="" id="" class="form-control custom-control custom-input-details mt-3"  placeholder="First Name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" name="" id="" class="form-control custom-control custom-input-details mt-3"  placeholder="Last Name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" name="email" id="" class="form-control custom-control custom-input-details mt-3"  placeholder="Email" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" name="area" id="" class="form-control custom-control custom-input-details mt-3"  placeholder="Region" required>
+                        </div>
+                        <div class="col-md-6">
+                            <select name="country" id="" class="form-control custom-control custom-input-details mt-3" >
+                                <option value="" disabled selected> Choose a Country</option>
+                                <option value="sa"> Saudi Aribia</option>
+                                <option value="mr"> Mauritania</option>
+                                <option value="al"> Algeria</option>
+                                <option value="pl"> Palestine</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <select name="city" id="paymentcities" class="form-control custom-control custom-input-details mt-3" required>
+                                <option value="" disabled selected> Choose a City</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" name="area" id="" class="form-control custom-control custom-input-details mt-3" placeholder="Fisrt Address" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="tele" name="area" id="" class="form-control custom-control custom-input-details mt-3" placeholder="Phone Number" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" name="area" id="" class="form-control custom-control custom-input-details mt-3 mb-3" placeholder="Fisrt Address ( Optional )" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="heading"> Payment information</h3>
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <label class="fw-bold">  
+                                <input type="radio" name="paymentmethod" value="credit_card" checked>
+                                Credit Card
+                            </label>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="fw-bold">
+                               <input type="radio" name="paymentmethod" value="delivery" checked>
+                               Cash Payement
+                           </label>
+                        </div>
+                    </div>
+                    <div class="row" id="cardit_card_info">
+                        <div class="col-md-6 mb-3">
+                            <input type="text" class="custom-form-control custom-input-details from-control" name="credit_card_number" placeholder="Card Number" required/>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="number" class="custom-form-control custom-input-details from-control" name="credit_card_expiration_month" placeholder="Expiration month" min="1" max="12" required/>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="number" class="custom-form-control custom-input-details from-control" name="credit_card_year" placeholder="Card Year"  min="2023" max="2045"required/>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="number" class="custom-form-control custom-input-details from-control" name="CCV" placeholder="CVV Number" required/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-4">
+                <h2 class="heading"> Your Demand </h2>
                 <table class="custom-table">
                     <thead  class="py-3">
                         <tr> 
@@ -171,112 +243,12 @@
                         <i class="fas fa-dollar-sign"></i>
                     </span>
                 </button>
-            </form>
-        </div>
-    <div class=" borders-between"></div>
-        <div class="row suggesting">
-            <h3 class="heading">
-                Suggest
-            </h3>
-            <div class="row">
-                <div class="col-lg-3 col-md-4">
-                    <div class="card custom-thumnail">
-                        <div class="overlay">
-                            <button class="btn add-to-cart-btn"> Add to Cart <i class="fas fa-cart-shopping"></i></button>
-                        </div>
-                        <img src="./images/most_sold_1.jpg" alt="most">
-                        <div class="card-body p-2">
-                       
-                            <div class="clearfix">
-                                <h4  class="float-start"> Floor T-shirt</h4>
-                                <div class="price float-end"> 200$</div>
-                            </div>
-                                <div class="rating">
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <button class="btn add-to-cart-btn d-block d-lg-none"> Add to Cart <i class="fas fa-cart-shopping"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                    <div class="card custom-thumnail">
-                        <div class="overlay">
-                            <button class="btn add-to-cart-btn"> Add to Cart <i class="fas fa-cart-shopping"></i></button>
-                        </div>
-                        <img src="./images/most_sold_2.jpg" alt="most">
-                        <div class="card-body p-2">
-                            <div class="clearfix">
-                                <h4  class="float-start"> Floor T-shirt</h4>
-                                <div class="price float-end"> 100$</div>
-                            </div>
-                                <div class="rating">
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <button class="btn add-to-cart-btn d-block d-lg-none"> Add to Cart <i class="fas fa-cart-shopping"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                    <div class="card custom-thumnail">
-                        <div class="sale">
-                            50%
-                        </div>
-                        <div class="overlay">
-                            <button class="btn add-to-cart-btn"> Add to Cart <i class="fas fa-cart-shopping"></i></button>
-                        </div>
-                        <img src="./images/most_sold_3.jpg" alt="most">
-                        <div class="card-body p-2">
-                            <div class="clearfix">
-                                <h4  class="float-start"> Floor T-shirt</h4>
-                                <div class="price float-end"> 300$</div>
-                            </div>
-                                <div class="rating">
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <button class="btn add-to-cart-btn d-block d-lg-none"> Add to Cart <i class="fas fa-cart-shopping"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 d-none d-lg-block">
-                    <div class="card custom-thumnail">
-                        <div class="overlay">
-                            <button class="btn add-to-cart-btn"> Add to Cart <i class="fas fa-cart-shopping"></i></button>
-                        </div>
-                        <img src="./images/most_sold_1.jpg" alt="most">
-                        <div class="card-body p-2">
-                            <div class="clearfix">
-                                <h4  class="float-start"> Floor T-shirt</h4>
-                                <div class="price float-end"> 200$</div>
-                            </div>
-                                <div class="rating">
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star active"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <button class="btn add-to-cart-btn d-block d-lg-none"> Add to Cart <i class="fas fa-cart-shopping"></i></button>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
+        </form> 
     </div>
-    </div>
-            <!--  Start Footer -->
-        <footer class="row">
+    <!--  End Payment -->
+        <!--  Start Footer -->
+    <footer class="row">
                 <div  id="brand-logos" class="text-center">
                     <span> World Product</span>
                     <div class="img-container">
@@ -328,8 +300,9 @@
                     </div>
     
                 </div>
-        </footer>
-            <!--  End Footer -->
+    </footer>
+        <!--  End Footer -->
+    </div>
     <script src="./index.js"></script>
 </body>
 </html>
