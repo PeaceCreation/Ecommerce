@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce | Search</title>
+</head>
+<body>
+    <div class="container-fluid">
+            <!-- Start Navbar -->
+    <div class="row">
+        <nav class="navbar custom-navbar navbar-expand-lg ">
+            <div class="container px-0">
+                <div class="navbar-header">
+                    <button class="navbar-toggler btn btn-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars fa-xl"></i>
+                    </button>
+                    <a href="./checkout.html" class="btn btn-icon d-lg-none">
+                        <i class="fas fa-cart-shopping"></i>
+                    </a>
+                    <a href="#">
+                        <img src="images/logo.png"  class="imgs" alt="arabic Shop">
+                    </a>
+                </div>
+                <form  class="d-flex inline-form">
+                    <input type="search"class="form-control custom-form-control " placeholder="Search... "/>
+                    <div class="dropdown">
+                        <a href="#" id="navbardropdown"  role="button" data-bs-toggle="dropdown" aria-expanded="false"class="nav-link dropdown-toggle custom-btn categories text-center">Choose </a>
+                        <ul class="dropdown-menu custom-dropdown-menu">
+                            <li>
+                                <div class="checkbox ms-3">
+                                    <input type="checkbox" name="search-category" value="Men"> Men
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox ms-3">
+                                    <input type="checkbox" name="search-category" value="Women"> Women
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox ms-3">
+                                    <input type="checkbox" name="search-category" value="Kids"> Kids
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="submit" class="btn search-btn mx-3">Search</button>
+                </form>
+                <div class="collapse navbar-collapse " id="navbarCollapse" >
+                    <ul class="navbar-nav">
+                        <li class="nav-item "><a href="./index.html" class="nav-link "> Home</a></li>
+                        <li class="nav-item dropdown"> 
+                            <a href="#" class="nav-link dropdown-toggle " id="navbarDropdow2" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Catogpries</a>
+                            <ul class="dropdown-menu custom-dropdown-menu">
+                                <li > <a href="#" class="dropdown-item"> Men</a></li>
+                                <li > <a href="#" class="dropdown-item"> Women</a></li>
+                                <li > <a href="#" class="dropdown-item"> Kids</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item active"><a href="./search.html" aria-current="page" class="nav-link"> Search</a></li>
+                        <li class="nav-item"> <a href="./contact.html" class="nav-link"> Contact Us</a></li>
+                        <li>
+                            <a href="./checkout.html" class="btn-icon btn d-none d-lg-block" id="btn-shopping-cart" title="shopping card" data-bs-toggle="tooltip" data-bs-placement="bottom">
+                                <i class="fas fa-cart-shopping"></i>
+                            </a>
+                         
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- end Navbar -->
+<!-- Start breadcumb -->
+    <div class="container">
+        <div class="container">
+            <div class="row" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+                <ol class="breadcrumb custom-breadcrumb">
+                    <li class="breadcrumb-item"><a href="./index.html"> Home</a></li>
+                    <li class="breadcrumb-item "><a href="#" class="active"> Search</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+<!-- End breadcumb -->
+<!-- Start For Saerch -->
+    <div class="row">
+        <form action="" id="form-advanced-search" class="col-lg-3 ">
+            <div class="row">
+                <div class="col-lg-12 col-md-4  col-6">
+                    <div id="saerch-by-category" class="card panel">
+                        <div class="card-header"> Search by Type</div>
+                        <div class="list-group custom-list-group">
+                            <div class="list-group-item">
+                                <input type="checkbox" name="category-tshirt" id="category-tshirt" checked>
+                                <label for="category-tshirt ">T-shirt </label>
+                                <small class="custom-text-muted fw-bold">(200) </small>
+                            </div>
+                        </div>
+                        <div class="list-group custom-list-group">
+                            <div class="list-group-item">
+                                <input type="checkbox" name="category-jacket" id="category-jacket" >
+                                <label for="category-jacket ">Jacket </label>
+                                <small class="custom-text-muted fw-bold">(500) </small>
+                            </div>
+                        </div>
+                            <div class="list-group custom-list-group">
+                                <div class="list-group-item">
+                                    <input type="checkbox" name="category-bag" id="category-bag" checked>
+                                    <label for="category-bag ">Hand Bag </label>
+                                    <small class="custom-text-muted fw-bold">(150) </small>
+                                </div>
+                            </div>
+                                <div class="list-group custom-list-group">
+                                    <div class="list-group-item">
+                                        <input type="checkbox" name="category-Jeans" id="category-Jeans" >
+                                        <label for="category-Jeans "> Jeans </label>
+                                        <small class="custom-text-muted fw-bold">(270) </small>
+                                    </div>
+                                </div>
+                            <div class="list-group custom-list-group">
+                                <div class="list-group-item">
+                                    <input type="checkbox" name="category-tshirt" id="category-tshirt" checked>
+                                    <label for="category-tshirt ">T-shirt </label>
+                                    <small class="custom-text-muted fw-bold">(200) </small>
+                                </div>
+                            </div>
+                            <div class="list-group custom-list-group">
+                                <div class="list-group-item">
+                                    <input type="checkbox" name="brand-nike" id="brand-nike">
+                                    <label for="brand-nike">Nike</label>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md4 col-6">
+                    <div class="card panel">
+                        <div class="card-header"> Search By Mark </div>
+                        <div class="list-group custom-list-group">
+                            <div class="list-group-item">
+                                <input type="checkbox" name="brand-adidas" id="brand-adidas" checked>
+                                <label for="brand-adidas">Adiddas</label>
+                            </div>
+                        </div>
+                        <div class="list-group custom-list-group">
+                            <div class="list-group-item">
+                                <input type="checkbox" name="brand-puma" id="brand-puma">
+                                <label for="brand-puma">Puma</label>
+                            </div>
+                        </div>
+                        <div class="list-group custom-list-group">
+                            <div class="list-group-item">
+                                <input type="checkbox" name="brand-polo" id="brand-polo" checked>
+                                <label for="brand-polo">Polo</label>
+                            </div>
+                        </div>
+                        <div class="list-group custom-list-group">
+                            <div class="list-group-item">
+                                <input type="checkbox" name="brand-nike" id="brand-nike">
+                                <label for="brand-nike">Nike</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="btn custom-btn-warning w-100 my-3"> Filter Search</button>
+            </div>
+        </form>
+        <div class="col-lg-9" id="search-resulat">
+            <h3 class="heading heading-width-border-bottom"> Search Result</h3>
+            <div class="row">
+                <div class="col-md-4"> 
+                    <div class="card custom-thumnail">
+                        <div class="overlay">
+                            <button class="btn add-to-cart-btn"> Add to Cart <i class="fas fa-cart-shopping"></i></button>
+                        </div>
+                        <img src="./images/most_sold_1.jpg" alt="most">
+                        <div class="card-body p-2">
+                       
+                            <div class="clearfix">
+                                <h4  class="float-start"> Floor T-shirt</h4>
+                                <div class="price float-end"> 200$</div>
+                            </div>
+                                <div class="rating text">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <button class="btn add-to-cart-btn d-block d-lg-none"> Add to Cart <i class="fas fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4"> 
+                    <div class="card custom-thumnail">
+                        <div class="overlay">
+                            <button class="btn add-to-cart-btn"> Add to Cart <i class="fas fa-cart-shopping"></i></button>
+                        </div>
+                        <img src="./images/most_sold_2.jpg" alt="most">
+                        <div class="card-body p-2">
+                       
+                            <div class="clearfix">
+                                <h4  class="float-start"> Floor T-shirt</h4>
+                                <div class="price float-end"> 200$</div>
+                            </div>
+                                <div class="rating">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <button class="btn add-to-cart-btn d-block d-lg-none"> Add to Cart <i class="fas fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4"> 
+                    <div class="card custom-thumnail">
+                        <div class="overlay">
+                            <button class="btn add-to-cart-btn"> Add to Cart <i class="fas fa-cart-shopping"></i></button>
+                        </div>
+                        <img src="./images/most_sold_3.jpg" alt="most">
+                        <div class="card-body p-2">
+                       
+                            <div class="clearfix">
+                                <h4  class="float-start"> Floor T-shirt</h4>
+                                <div class="price float-end"> 200$</div>
+                            </div>
+                                <div class="rating">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <button class="btn add-to-cart-btn d-block d-lg-none"> Add to Cart <i class="fas fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+            <div class="row">
+                <div class="col-md-4"> 
+                    <div class="card custom-thumnail">
+                        <div class="overlay">
+                            <button class="btn add-to-cart-btn"> Add to Cart <i class="fas fa-cart-shopping"></i></button>
+                        </div>
+                        <img src="./images/most_sold_2.jpg" alt="most">
+                        <div class="card-body p-2">
+                       
+                            <div class="clearfix">
+                                <h4  class="float-start"> Floor T-shirt</h4>
+                                <div class="price float-end"> 200$</div>
+                            </div>
+                                <div class="rating">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <button class="btn add-to-cart-btn d-block d-lg-none"> Add to Cart <i class="fas fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4"> 
+                    <div class="card custom-thumnail">
+                        <div class="overlay">
+                            <button class="btn add-to-cart-btn"> Add to Cart <i class="fas fa-cart-shopping"></i></button>
+                        </div>
+                        <img src="./images/lacoste_3.jpg" alt="most">
+                        <div class="card-body p-2">
+                       
+                            <div class="clearfix">
+                                <h4  class="float-start"> Floor T-shirt</h4>
+                                <div class="price float-end"> 200$</div>
+                            </div>
+                                <div class="rating">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <button class="btn add-to-cart-btn d-block d-lg-none"> Add to Cart <i class="fas fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4"> 
+                    <div class="card custom-thumnail">
+                        <div class="overlay">
+                            <button class="btn add-to-cart-btn"> Add to Cart <i class="fas fa-cart-shopping"></i></button>
+                        </div>
+                        <img src="./images/product_1.jpg" alt="most">
+                        <div class="card-body p-2">
+                       
+                            <div class="clearfix">
+                                <h4  class="float-start"> Floor T-shirt</h4>
+                                <div class="price float-end"> 200$</div>
+                            </div>
+                                <div class="rating">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <button class="btn add-to-cart-btn d-block d-lg-none"> Add to Cart <i class="fas fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+            <div class="row">
+                <div class="col-md-4"> 
+                    <div class="card custom-thumnail">
+                        <div class="overlay">
+                            <button class="btn add-to-cart-btn"> Add to Cart <i class="fas fa-cart-shopping"></i></button>
+                        </div>
+                        <img src="./images/most_sold_1.jpg" alt="most">
+                        <div class="card-body p-2">
+                       
+                            <div class="clearfix">
+                                <h4  class="float-start"> Floor T-shirt</h4>
+                                <div class="price float-end"> 200$</div>
+                            </div>
+                                <div class="rating">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <button class="btn add-to-cart-btn d-block d-lg-none"> Add to Cart <i class="fas fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4"> 
+                    <div class="card custom-thumnail">
+                        <div class="overlay">
+                            <button class="btn add-to-cart-btn"> Add to Cart <i class="fas fa-cart-shopping"></i></button>
+                        </div>
+                        <img src="./images/most_sold_2.jpg" alt="most">
+                        <div class="card-body p-2">
+                       
+                            <div class="clearfix">
+                                <h4  class="float-start"> Floor T-shirt</h4>
+                                <div class="price float-end"> 200$</div>
+                            </div>
+                                <div class="rating">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <button class="btn add-to-cart-btn d-block d-lg-none"> Add to Cart <i class="fas fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4"> 
+                    <div class="card custom-thumnail">
+                        <div class="overlay">
+                            <button class="btn add-to-cart-btn"> Add to Cart <i class="fas fa-cart-shopping"></i></button>
+                        </div>
+                        <img src="./images/most_sold_3.jpg" alt="most">
+                        <div class="card-body p-2">
+                       
+                            <div class="clearfix">
+                                <h4  class="float-start"> Floor T-shirt</h4>
+                                <div class="price float-end"> 200$</div>
+                            </div>
+                                <div class="rating">
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star active"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <button class="btn add-to-cart-btn d-block d-lg-none"> Add to Cart <i class="fas fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+            <div class="col-lg-9 offset-lg-3">
+                <nav aria-label="Page navigation example " class="serach-pagination">
+                    <ul class="pagination custom-pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                      <li class="page-item"><a class="page-link" href="#">5</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+            </div>
+        </div>
+    </div>
+<!-- End For Saerch -->
+        <!--  Start Footer -->
+    <footer class="row">
+                <div  id="brand-logos" class="text-center">
+                    <span> World Product</span>
+                    <div class="img-container">
+                        <img src="./images/adidas.png" alt="adidas">
+                        <img src="./images/lacoste.png" alt="lacoste">
+                        <img src="./images/puma.png" alt="puma">
+                        <img src="./images/polo.png" alt="polo">
+                    </div>
+                </div>
+                <div id="footer-nav" class="text-center">
+                    <div class="footer-logo">
+                        <a href="./">
+                            <img src="./images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footer-nav-link d-none d-md-block">
+                        <a href="./index.html"> Home</a>
+                        <a href="./search.html"> Search</a>
+                        <a href="./contact.html"> Contact Us</a>
+                    </div>
+                    <div class="newletter col-6 offset-3 d-flex align-items-center justify-content-center">
+                        <form >
+                            <label for=""> Subscribe For Leatest New</label>
+                            <div class="input-group">
+                                <input type="email" name="email"  id="footer-input" class="form-control custom-form-control">
+                                <button type="submit" class="btn custom-btn-warning "> Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="footer-copyright-social">
+                    <div class="container">
+                        <div class="d-flex copy align-items-center justify-content-between py-2">
+                            <div id="copyright float-start"> 
+                                All right reserved for <span id="fullYear"></span> &copy;
+                            </div>
+                            <div class="social-icons float-end">
+                                <a href="https:www.facebook.com">
+                                    <i class="fab fa-facebook "></i>
+                                </a>
+                                <a href="https:www.twitter.com">
+                                    <i class="fab fa-twitter-square "></i>
+                                </a>
+                                <a href="https:www.instagram.com">
+                                    <i class="fab fa-instagram "></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+    </footer>
+        <!--  End Footer -->
+    <script src="./search.html"></script>
+</body>
+</html>

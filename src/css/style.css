@@ -195,7 +195,7 @@ ul.navbar-nav{
     margin-bottom: 25px;
 }
 .custom-thumnail img{
-    width:100%;
+    max-width:100%;
     max-width:250px;
     height:250px;
 }
@@ -524,7 +524,57 @@ thead{
     width:98%;
 }
 /*  Start payment */
-
+/*  Start Search  */
+#form-advanced-search {
+    border:1px solid #EBEBEB;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    height: fit-content;
+}
+#form-advanced-search .panel{
+    border:none;
+}
+#form-advanced-search label{
+    font-weight: bold;
+    cursor: pointer;
+}
+.panel .card-header{
+    background-color: transparent;
+    margin-bottom: 15px;
+    padding-bottom: 14px;
+}
+.custom-list-group .list-group-item{
+    border:none;
+}
+.custom-list-group{
+    border-bottom: 1px solid #EBEBEB;
+}
+.custom-pagination .page-link{
+    margin-right: 6px  !important;
+    margin-left: 8px !important;
+    padding-top:4px;
+    padding-bottom: 6px;
+    border:1px solid #EBEBEB !important;
+    width:32px !important;
+    height: 36px !important;
+    color:#C2C2C2 !important;
+    text-decoration: none !important;
+    outline: none !important;
+    transition: all .5s ease !important;
+}
+.custom-pagination .page-item.active .page-link{
+    background-color:#f8ad47 !important;
+    border-color:#f8ad47 !important;
+    color:#fff !important;
+}
+.custom-pagination .page-link:active,
+.custom-pagination .page-link:focus,
+.custom-pagination .page-link:hover a{
+    border-color:#f8ad47 !important;
+    background-color:#f8ad47 !important;
+    color: #fff !important;
+}
+/*  End Search  */
 /*  End payment */
 /* Start Media Queries */
 
@@ -626,7 +676,11 @@ thead{
     .product-images{
         margin-bottom: 70px;
     }
-    
+  .serach-pagination{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
  }
 
 @media (max-width: 1199.98px) { 
