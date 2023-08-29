@@ -9,25 +9,6 @@
     background-color: #fff;
     padding:6px 0;
 }
-.custom-form-control, .dropdown a.custom-btn{
-    border:1px solid #EBEBEB;
-    box-shadow: none;
-    border-radius: 2px;
-    color:#868686;
-    transition:all .5s ease;
-}
-.custom-form-control:focus{
-    border-color: #C2101E;
-    box-shadow: 0 0 2px #C2101E;;
-}
-.dropdown a.custom-btn:hover{
-    background-color: #d4d4d4;
-    border:1px solid #8c8c8c;
-    color:#ff3956;
-}
-.dropdown a.custom-btn:focus{
-    color:#ff3956;
-}
 .categories{
     border: right !important;
     border-radius: 0;
@@ -38,21 +19,6 @@
     box-shadow: 0 2px 5px 0 #EBEBEB;
     color: #777;
 }
-.search-btn{
-    border-color: #ff3956;
-    color:#fff;
-    border-radius: 0;
-    background-color:#ff3956;
-}
-.search-btn:hover,
-.search-btn:active,
-.search-btn:focus,
-.search-btn:active:focus,
-.search-btn:active:hover{
-    background-color: #C2101E;
-    color:#fff;
-}
-
 .nav-link{
     color:#555;
     font-size: 15px;
@@ -112,19 +78,7 @@ ul.navbar-nav{
     right:-10px;
     background-color: #F7f8f3;
 }
-.custom-outline-warning{
-    background-color: transparent;
-    border-color: #f8ad47;
-    color: #f8ad47;
-}
-.search-.custom-outline-warning:hover,
-.search-.custom-outline-warning:active,
-.search-.custom-outline-warning:focus,
-.search-.custom-outline-warning:active:focus,
-.search-.custom-outline-warning:active:hover{
-    border-color: #b86d07;
-    color: #b86d07;
-}
+
 .sale{
     background-color: #53CCD7;
     color: #fff;
@@ -194,17 +148,6 @@ ul.navbar-nav{
     font-size: 25px;
     margin-bottom: 25px;
 }
-.custom-thumnail img{
-    max-width:100%;
-    max-width:250px;
-    height:250px;
-}
-.custom-thumnail{
-    border: 2px solid #EEF0EA;
-    padding:8px;
-    cursor: pointer;
-    margin-bottom: 50px;
-}
 .custom-thumnail .sale{
     position:absolute;
     padding:5px 10px;
@@ -212,12 +155,7 @@ ul.navbar-nav{
 .custom-thumnail .sale::before{
     content: "-";
 }
-.custom-thumnail:hover{
-    border-color: #53CCD7;
-}
-.custom-thumnail h4{
-    font-size: 20px;
-}
+
 .price{
     color:#53CCD7;
 }
@@ -241,11 +179,7 @@ ul.navbar-nav{
 .overlay:hover{
     opacity: 1;
 }
-.add-to-cart-btn{
-    color:#53CCD7;
-    background-color: #fff;
-    font-weight: 700;
-}
+
 .carousel-indicators2{
     bottom: -58px !important;
     padding:20px 0 !important;
@@ -327,19 +261,7 @@ ul.navbar-nav{
     font-weight: bold;
     color:#555;
 }
-.custom-btn-warning{
-    color:#000;
-    background-color:#f8ad47;
-    border-color:#f8ad47;
-}
-.custom-btn-warning:hover,
-.custom-btn-warning:active,
-.custom-btn-warning:focus,
-.custom-btn-warning:active:focus,
-.custom-btn-warning:active:hover{
-    background-color: #b86d07;
-    border-color: #b86d07;
-}
+
 #footer-copyright-social{
     background-color: #151515;
     color:#303030;
@@ -463,49 +385,12 @@ ul.navbar-nav{
     border:1px solid #EBEBEB;
     margin-left: 10px;
  }
- .custom-table th,
- .custom-table td
- {
-    font-size: 12px;
-    vertical-align: middle;
-    border-top: 1px solid #000;
-    border-bottom:1px solid #EBEBEB;
- }
- .custom-table h4{
-    font-size:20px;
-    margin:12px 0;
- }
- .custom-table th{
-    color:#C2C2C2;
-    font-size: normal;
- }
- .custom-table th:first-child,
- .custom-table td:first-child{
-    width:50%;
- }
- .custom-table th:not(:first-child),
- .custom-table td:not(:first-child){
-    text-align: center;
- }
-.custom-heading{
+ .custom-heading{
     font-size:36px;
     margin-bottom: 25px;
-}
-.custom-table .custom-table tfoot{
-    border-bottom: none;
-    font-size: 150%;
-}
+ }
 #total-price{
     color:#000;
-}
-.custom-btn-outline-danger{
-    background-color:transparent;
-    border-color:#ff3956;
-    color:#ff3956;
-}
-.custom-btn-outline-danger:hover{
-    border-color:#ff3956;
-    color:#ff3956;
 }
 thead{
     padding:14px  0 !important;
@@ -724,12 +609,4 @@ thead{
         margin-right: 5% !important;
     }
  }
-
- @media(max-width:767.98px){
-    .custom-thumnail img{
-       width:250px;
-       margin: auto;
-    }
- }
-
 /* End Media Queries */

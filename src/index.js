@@ -1,8 +1,10 @@
 // import 'bootstrap/dist/js/bootstrap';
 window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
-import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap/dist/css/bootstrap.css';
+import './sass/custom.scss';
 import './css/style.css';
-import '@fortawesome/fontawesome-free/js/all.min.js'
+import '@fortawesome/fontawesome-free/js/all.min.js';
+import './sass/style.scss';
 
 // var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 // var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
